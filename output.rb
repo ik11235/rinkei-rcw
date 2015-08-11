@@ -1,6 +1,6 @@
 require 'yaml'
 
-RECIPE_PATH = './recipes/rice_omelet.yml'
+RECIPE_PATH = './recipes.yml'
 
 recipes = YAML.load_file(RECIPE_PATH)
 
