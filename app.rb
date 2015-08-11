@@ -1,15 +1,21 @@
+# -*- coding: utf-8 -*-
 require 'yaml'
 
 def output(id, name, description)
   puts "#{id}: #{name} #{description}"
 end
 
-RECIPE_PATH = './recipes.yml'
+RECIPE_SET = {
+  FILE_PATH: './recipes.yml',
+  USER_NAME: 'ik'
+}
 
-recipes = YAML.load_file(RECIPE_PATH)
+recipes = YAML.load_file(RECIPE_SET[:FILE_PATH])
 
-recipe_id = ARGV[0]
+user_name = RECIPE_SET[:USER_NAME]
+recipe_id = ARGV[1]
 
+puts "ユーザー名: #{user_name}"
 if recipe_id
   i = recipe_id.to_i - 1
   recipe = recipes[i]
