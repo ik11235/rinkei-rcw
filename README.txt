@@ -3,7 +3,7 @@
 
 ## 使い方
 
-```ruby output.rb```
+```ruby app.rb```
 
 レシピは```./recipes.yml```に記述されている。
 変更したい場合はこれをYAMLフォーマットで変更する。
